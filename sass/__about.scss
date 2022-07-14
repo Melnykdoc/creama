@@ -2,10 +2,20 @@
   background: #fff5f6;
 }
 .about {
+}
+.about__color {
   background-image: url("../images/milk-mob1.png");
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: 20px 84%;
+  background-position: 0 40%;
+  @media screen and (min-width: 768px) {
+    background-image: none;
+    margin-left: 32px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 60px;
+    margin-left: 99px;
+  }
 }
 .about__text {
   font-family: "Titan One";
@@ -29,9 +39,17 @@
   text-transform: uppercase;
   color: #d41443;
   margin-bottom: 32px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 40px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 60px;
+  }
 }
 .about__img {
   margin-bottom: 40px;
+  width: 100%;
+  max-width: 336px;
 }
 .about__btn {
   width: 176px;
@@ -58,7 +76,18 @@
   font-size: 12px;
   line-height: 1.6;
   color: #000000;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
+  padding: 0 40px 0 0;
+  @media screen and (min-width: 768px) {
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.76;
+    color: #000000;
+  }
+  @media screen and (min-width: 1200px) {
+  }
 }
 .about__second-text {
   font-family: "DM Sans";
@@ -68,6 +97,20 @@
   line-height: 1.6;
   color: #907e82;
   margin-bottom: 20px;
+  padding: 0 60px 0 0;
+  @media screen and (min-width: 768px) {
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.76;
+    letter-spacing: 0.04em;
+
+    color: #907e82;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 0;
+  }
 }
 .about__number {
   margin-bottom: 4px;
@@ -140,9 +183,8 @@
 .about__flex {
   display: block;
   @media screen and (min-width: 768px) {
-    margin-bottom: 36px;
+    display: flex;
   }
   @media screen and (min-width: 1200px) {
-    margin-bottom: 40px;
   }
 }
