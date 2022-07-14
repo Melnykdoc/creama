@@ -87,6 +87,18 @@
   margin-bottom: 16px;
 }
 
-.about__item:not(:last-child) {
+.advantages__grid {
+  display: block;
+  
+  @media screen and (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 180px 162px 159px;
+}
+ @media screen and (min-width: 1200px) {
+   display: grid;
+   grid-template-columns: 180px 162px 159px;
+ }
+}
+.advantages__container {
   margin-bottom: 32px;
 }
